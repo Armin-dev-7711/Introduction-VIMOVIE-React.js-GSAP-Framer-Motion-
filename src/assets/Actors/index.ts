@@ -1,0 +1,10 @@
+export { default as ActorOne } from "@/assets/Actors/ActorOne.webp";
+export { default as ActorTwo } from "@/assets/Actors/ActorTwo.webp";
+export { default as ActorThree } from "@/assets/Actors/ActorThree.webp";
+export { default as ActorFour } from "@/assets/Actors/ActorFour.webp";
+export { default as ActorFive } from "@/assets/Actors/ActorFive.webp";
+export { default as ActorSix } from "@/assets/Actors/ActorSix.webp";
+export { default as ActorSeven } from "@/assets/Actors/ActorSeven.webp";
+export { default as ActorEight } from "@/assets/Actors/ActorEight.webp";
+export { default as ActorNine } from "@/assets/Actors/ActorNine.webp";
+export { default as ActorTen } from "@/assets/Actors/ActorTen.webp";

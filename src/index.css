@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #121212;
+  --color-texts: #ffffff;
+  --color-button: #d63031;
+  --color-buttonBackground: #ffffff;
+  --color-paragraph: #d0d0d0;
+  --color-wind: #2a2a2a;
+  /* --spacing: 16px; */
+  --font-Popins: "Poppins", sans-serif;
+  --font-Lora: "Lora", serif;
+  --font-Anton: "Anton", serif;
+  --font-Roboto: "Roboto Condensed", serif;
+  --text-small: 0.833rem;
+  --text-p: 1rem;
+  --text-h6: 1.2rem;
+  --text-h5: 1.44rem;
+  --text-h4: 1.728rem;
+  --text-h3: 2.074rem;
+  --text-h2: 2.488rem;
+  --text-h1: 2.986rem;
+}
+
+body {
+  @apply bg-primary relative overflow-x-hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+* {
+  outline: none;
+}
+
+.max-container {
+  @apply max-w-[1750px] mx-auto;
+}
+
+.padding-x {
+  @apply px-[24px];
+}
+
+.layout-window {
+  @apply h-full sm:min-h-screen w-full fixed z-50 top-0 backdrop-blur-md overflow-y-scroll;
+}
+
+.window {
+  @apply h-full max-sm:max-h-[600px] md:h-[85vh] w-full max-w-[80%] rounded-md mx-auto mt-16 backdrop-blur-3xl bg-[#2a2a2a] px-6 sm:px-12 overflow-hidden max-sm:pb-[24px] mb-[48px];
+}
+
+.layer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.902) 20%, transparent);
+}
+.layerHome {
+  background: linear-gradient(
+    to top,
+    #121212 5%,
+    /* rgba(0, 0, 0, 0.902), */ transparent
+  );
+}
+
+.headerLayout {
+  background: linear-gradient(to bottom, #121212 55%, transparent);
+}
+
+.clipOn {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.clipOff {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.dotTop {
+  animation: moveTop 1s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dotDown {
+  animation: moveDown 1s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+@keyframes moveTop {
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+
+  100% {
+    transform: translateY(-1px);
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+.bx-shadow {
+  /* box-shadow: 2px 2px 10px #2a2a2a; */
+  background-color: #2a2a2a;
+}
+
+.card-backgroundOne {
+  background: linear-gradient(to top, #121212c5, #121212c5),
+    url("./assets/Cards/CardOne.webp");
+  background-position: center;
+  background-size: cover;
+}
+.card-backgroundTwo {
+  background: linear-gradient(to top, #121212c5, #121212c5),
+    url("./assets/Cards/CardTwo.webp");
+  background-position: center;
+  background-size: cover;
+}
+.card-backgroundThree {
+  background: linear-gradient(to top, #121212c5, #121212c5),
+    url("./assets/Cards/CardThree.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.triengle-path {
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.footerBackground {
+  background: linear-gradient(to top, #2a2a2a 80%, var(--color-primary));
+}
+
+.middleClipOff {
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+.middleClipOn {
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.pathMovieOne {
+  clip-path: polygon(0 0, 50% 50%, 100% 100%, 0% 100%);
+}
+.pathMovieTwo {
+  clip-path: polygon(0 0, 50% 50%, 100% 100%, 100% 0);
+}
+
+.pathOffMovieOne {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 0 100%);
+}
+.pathOffMovieTwo {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}
+
+.pathOnMovieOn {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.pathOnMovieOne {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.pathOnMovieTwo {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.center .slick-slide {
+  margin: 0 10px;
+}
+.genre-card {
+  perspective: 1000px;
+}
+
+.TransofrmOrigin {
+  transform-origin: 50% 15%; /* adjust as needed */
+}
